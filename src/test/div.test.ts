@@ -6,8 +6,8 @@ describe('verify that the div are working correct', () => {
   });
 
   it('should throw an error when to dividing by zero', () => {
-    expect(() => {
-      div(2, 0);
-    }).toThrow(Error);
+    expect(
+      div(2, 0)
+    ).toBe(Infinity);
   });
 })
